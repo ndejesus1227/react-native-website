@@ -25,13 +25,20 @@ import { Button } from 'react-native';
 
 ### Props
 
-- [`onPress`](button.md#onpress)
-- [`title`](button.md#title)
 - [`accessibilityLabel`](button.md#accessibilitylabel)
 - [`color`](button.md#color)
 - [`disabled`](button.md#disabled)
-- [`testID`](button.md#testid)
 - [`hasTVPreferredFocus`](button.md#hastvpreferredfocus)
+- [`nextFocusDown`](view.md#nextfocusdown)
+- [`nextFocusForward`](view.md#nextfocusForward)
+- [`nextFocusLeft`](view.md#nextfocusleft)
+- [`nextFocusRight`](view.md#nextfocusright)
+- [`nextFocusUp`](view.md#nextfocusleft)
+- [`onPress`](button.md#onpress)
+- [`testID`](button.md#testid)
+- [`title`](button.md#title)
+- [`touchSoundDisabled`](button.md#touchSoundDisabled)
+
 
 ---
 
@@ -99,6 +106,49 @@ Used to locate this view in end-to-end tests.
 
 ---
 
+### `nextFocusForward`
+
+Designates the next view to receive focus when the user navigates forward. See the [Android documentation](https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusForward).
+
+| Type   | Required | Platform |
+| ------ | -------- | -------- |
+| number | No       | Android  |
+
+
+---
+
+### `nextFocusLeft`
+
+Designates the next view to receive focus when the user navigates left. See the [Android documentation](https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusLeft).
+
+| Type   | Required | Platform |
+| ------ | -------- | -------- |
+| number | No       | Android  |
+
+
+---
+
+### `nextFocusRight`
+
+Designates the next view to receive focus when the user navigates right. See the [Android documentation](https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusRight).
+
+| Type   | Required | Platform |
+| ------ | -------- | -------- |
+| number | No       | Android  |
+
+
+---
+
+### `nextFocusUp`
+
+Designates the next view to receive focus when the user navigates up. See the [Android documentation](https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusUp).
+
+| Type   | Required | Platform |
+| ------ | -------- | -------- |
+| number | No       | Android  |
+
+---
+
 ### `hasTVPreferredFocus`
 
 _(Apple TV only)_ TV preferred focus (see documentation for the View component).
@@ -106,3 +156,15 @@ _(Apple TV only)_ TV preferred focus (see documentation for the View component).
 | Type | Required | Platform |
 | ---- | -------- | -------- |
 | bool | No       | iOS      |
+
+
+---
+
+### `touchSoundDisabled`
+
+If true, doesn't play system sound on touch (Android Only)
+
+| Type | Required | Platform     |
+| ---- | -------- | --------     |
+| bool | No       | Android      |
+
